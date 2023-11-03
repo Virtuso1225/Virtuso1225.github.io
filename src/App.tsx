@@ -1,7 +1,8 @@
 import { useLocation, useRoutes } from 'react-router-dom'
 import router from './router'
 import { ThemeProvider, createTheme } from '@mui/material'
-import COLORS from './theme/colors'
+import COLORS from 'src/theme/colors'
+import 'src/translate/index'
 
 const App = () => {
   const content = useRoutes(router)
@@ -40,6 +41,7 @@ const App = () => {
       }
     }
   })
+
   return <ThemeProvider theme={theme}>{content}</ThemeProvider>
 }
 

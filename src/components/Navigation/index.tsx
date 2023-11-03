@@ -1,7 +1,8 @@
-import { Box, styled, useMediaQuery, useTheme } from '@mui/material'
+import { Box, styled, useMediaQuery } from '@mui/material'
 import { useEffect, useState } from 'react'
 import Header from './Header'
 import { Outlet, useLocation } from 'react-router-dom'
+import '../../css/background.css'
 
 const ThemeWrapper = styled(Box)(
   () => `
@@ -17,21 +18,8 @@ const Navigation = () => {
   const matches = useMediaQuery('(max-width:800px)')
   const [isMobile, setIsMobile] = useState(matches)
   const location = useLocation()
-  const { palette } = useTheme()
 
-  const getBackgroundStyle = () => {
-    if (location.pathname === '/') {
-      return {
-        backgroundImage: 'url(./assets/background.jpg)',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
-      }
-    } else {
-      return {
-        backgroundColor: palette.background.default
-      }
-    }
-  }
+  const showBackgroundImage = location.pathname === '/'
 
   useEffect(() => {
     setIsMobile(matches)
@@ -46,9 +34,9 @@ const Navigation = () => {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center'
-        },
-        getBackgroundStyle()
+        }
       ]}
+      className={showBackgroundImage ? 'show-background' : ''}
     >
       {isMobile ? 'Mobile' : <Header />}
       <ThemeWrapper>

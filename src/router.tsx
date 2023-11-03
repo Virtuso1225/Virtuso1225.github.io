@@ -4,7 +4,6 @@ import AgendaPage from './pages/AgendaPage'
 import ContactPage from './pages/ContactPage'
 import JoinPage from './pages/JoinPage'
 import NotFoundPage from './pages/NotFoundPage'
-import ReviewPage from './pages/ReviewPage'
 import LocationPage from './pages/LocationPage'
 
 const routes: RouteObject[] = [
@@ -31,10 +30,6 @@ const routes: RouteObject[] = [
       {
         path: '/join',
         element: <JoinPage />
-      },
-      {
-        path: '/review',
-        element: <ReviewPage />
       },
       {
         path: '*',
