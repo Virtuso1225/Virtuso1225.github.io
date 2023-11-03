@@ -1,25 +1,32 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Tabs } from '@mui/material'
 import HeaderTabs from './HeaderTabs'
+import Logo from './Logo'
 
 const Header = () => {
   return (
     <Box
       sx={{
-        position: 'sticky',
-        top: 0,
         display: 'flex',
-        width: '90%',
+        width: '100vw',
         height: '70px',
-        borderBottom: '1px solid white',
-        alignItems: 'center',
-        paddingX: '10px',
-        justifyContent: 'space-between'
+        alignItems: 'center'
       }}
     >
-      <Typography fontSize={20} fontWeight={700} lineHeight="normal">
-        정보대학 행사명
-      </Typography>
-      <HeaderTabs />
+      <Tabs
+        textColor={'inherit'}
+        sx={{
+          borderBottom: 1,
+          justifyContent: 'space-between',
+          display: 'flex',
+          width: '100vw',
+          alignItems: 'center',
+          paddingX: 4,
+          marginX: 12
+        }}
+      >
+        <Logo />
+        <HeaderTabs />
+      </Tabs>
     </Box>
   )
 }
