@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material'
 
 const MainPage = () => {
-  console.log('MainPage')
   return (
     <Box>
       <Typography>메인 페이지</Typography>

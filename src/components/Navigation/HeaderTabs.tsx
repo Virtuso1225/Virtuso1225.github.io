@@ -1,23 +1,28 @@
 import { Box, Tab, Tabs } from '@mui/material'
-import { PAGES_TAB } from '@src/data/header'
-import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
-const HeaderTabs = () => {
-  const [currentTab, setCurrentTab] = useState(0)
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setCurrentTab(newValue)
-  }
+interface HeaderTabsProps {
+  currentTab: number
+  handleChange: (event: React.SyntheticEvent, newValue: number) => void
+}
+const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
+  const { t } = useTranslation()
   return (
-    <Box>
+    <Box sx={{ marginLeft: 'auto' }}>
       <Tabs
         value={currentTab}
         onChange={handleChange}
-        TabIndicatorProps={{ sx: { background: 'white' } }}
         textColor="inherit"
+        indicatorColor={'primary'}
+        variant="scrollable"
+        scrollButtons
+        allowScrollButtonsMobile
       >
-        {PAGES_TAB.map((tab, index) => (
-          <Tab key={index} label={tab} />
-        ))}
+        <Tab label={t('main.title')} />
+        <Tab label={t('agenda.title')} />
+        <Tab label={t('location.title')} />
+        <Tab label={t('join.title')} />
+        <Tab label={t('contact.title')} />
       </Tabs>
     </Box>
   )
