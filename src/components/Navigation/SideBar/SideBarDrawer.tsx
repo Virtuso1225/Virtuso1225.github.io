@@ -19,7 +19,6 @@ const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
       anchor="right"
       sx={{
         '& .MuiDrawer-paper': {
-          background: 'black',
           width: '100vw',
           boxSizing: 'border-box',
           opacity: 1
@@ -29,7 +28,7 @@ const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
       <AppBar position="static" sx={{ background: 'inherit', borderBottom: 1, borderColor: 'white' }}>
         <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
           <Logo handleClicked={handleDrawerClose} />
-          <IconButton size="large" color="primary" onClick={handleDrawerClose}>
+          <IconButton size="large" color="inherit" onClick={handleDrawerClose}>
             <ChevronRightIcon />
           </IconButton>
         </Toolbar>

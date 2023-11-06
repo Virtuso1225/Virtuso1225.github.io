@@ -10,6 +10,7 @@ const App = () => {
   const location = useLocation()
 
   const mainColor = location.pathname === '/' ? COLORS.primary : COLORS.antiPrimary
+  const antiColor = location.pathname === '/' ? COLORS.antiPrimary : COLORS.primary
 
   const theme = responsiveFontSizes(
     createTheme({
@@ -45,6 +46,21 @@ const App = () => {
         MuiTypography: {
           styleOverrides: {
             root: {
+              color: mainColor
+            }
+          }
+        },
+        MuiAppBar: {
+          styleOverrides: {
+            root: {
+              color: mainColor
+            }
+          }
+        },
+        MuiDrawer: {
+          styleOverrides: {
+            paper: {
+              backgroundColor: antiColor,
               color: mainColor
             }
           }
