@@ -10,7 +10,7 @@ const LanguageBtn = () => {
   }
 
   return (
-    <Button sx={{ mr: 1 }} onClick={changeLanguage}>
+    <Button onClick={changeLanguage}>
       <Typography variant="caption" fontWeight={'bold'} color={'secondary'}>
         {t('language')}
       </Typography>

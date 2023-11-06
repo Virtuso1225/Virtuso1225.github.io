@@ -1,48 +1,90 @@
 import { useLocation, useRoutes } from 'react-router-dom'
 import router from './router'
-import { ThemeProvider, createTheme } from '@mui/material'
+import { CssBaseline, ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material'
 import COLORS from 'src/theme/colors'
 import 'src/translate/index'
+import PretendardVariable from '@src/assets/fonts/PretendardVariable.ttf'
 
 const App = () => {
   const content = useRoutes(router)
   const location = useLocation()
 
   const mainColor = location.pathname === '/' ? COLORS.primary : COLORS.antiPrimary
+  const antiColor = location.pathname === '/' ? COLORS.antiPrimary : COLORS.primary
 
-  const theme = createTheme({
-    palette: {
-      primary: {
-        main: COLORS.primary,
-        contrastText: COLORS.antiPrimary
+  const theme = responsiveFontSizes(
+    createTheme({
+      typography: {
+        fontFamily: 'PretendardVariable'
       },
-      secondary: {
-        main: COLORS.secondary,
-        contrastText: COLORS.antiSecondary
-      }
-    },
-    components: {
-      MuiTabs: {
-        styleOverrides: {
-          indicator: {
-            backgroundColor: mainColor
-          },
-          root: {
-            color: mainColor
-          }
+      palette: {
+        primary: {
+          main: COLORS.primary,
+          contrastText: COLORS.antiPrimary
+        },
+        secondary: {
+          main: COLORS.secondary,
+          contrastText: COLORS.antiSecondary
         }
       },
-      MuiTypography: {
-        styleOverrides: {
-          root: {
-            color: mainColor
+      components: {
+        MuiCssBaseline: {
+          styleOverrides: {
+            '@font-face': [PretendardVariable]
+          }
+        },
+        MuiTabs: {
+          styleOverrides: {
+            indicator: {
+              backgroundColor: mainColor
+            },
+            root: {
+              color: mainColor
+            }
+          }
+        },
+        MuiTab: {
+          styleOverrides: {
+            root: {
+              color: mainColor,
+              '&.Mui-selected': {
+                color: location.pathname === '/' ? '#939495' : mainColor
+              }
+            }
+          }
+        },
+        MuiTypography: {
+          styleOverrides: {
+            root: {
+              color: mainColor
+            }
+          }
+        },
+        MuiAppBar: {
+          styleOverrides: {
+            root: {
+              color: mainColor
+            }
+          }
+        },
+        MuiDrawer: {
+          styleOverrides: {
+            paper: {
+              backgroundColor: antiColor,
+              color: mainColor
+            }
           }
         }
       }
-    }
-  })
+    })
+  )
 
-  return <ThemeProvider theme={theme}>{content}</ThemeProvider>
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {content}
+    </ThemeProvider>
+  )
 }
 
 export default App

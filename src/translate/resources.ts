@@ -1,43 +1,37 @@
 const resources = {
   en: {
     translation: {
-      logo: 'AI Conference 2023',
+      logo: 'AI TECH DAY 2023',
       language: '한국어',
-      main: {
+      home: {
         title: 'Introduction'
       },
-      agenda: {
-        title: 'Agenda'
+      program: {
+        title: 'Program'
       },
       location: {
         title: 'Location'
       },
-      join: {
-        title: 'Join Us'
-      },
-      contact: {
-        title: 'Contact'
+      organizer: {
+        title: 'Organizer'
       }
     }
   },
   ko: {
     translation: {
-      logo: 'AI 컨퍼런스 2023',
+      logo: 'AI TECH DAY 2023',
       language: 'English',
-      main: {
+      home: {
         title: '소개'
       },
-      agenda: {
-        title: '일정'
+      program: {
+        title: '프로그램'
       },
       location: {
-        title: '장소'
+        title: '오는 길'
       },
-      join: {
-        title: '참가하기'
-      },
-      contact: {
-        title: '문의하기'
+      organizer: {
+        title: '연사소개'
       }
     }
   }

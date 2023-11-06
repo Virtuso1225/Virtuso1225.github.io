@@ -1,5 +1,6 @@
 import { Box, Tab, Tabs } from '@mui/material'
 import { useTranslation } from 'react-i18next'
+import { useLocation } from 'react-router-dom'
 
 interface HeaderTabsProps {
   currentTab: number
@@ -7,22 +8,24 @@ interface HeaderTabsProps {
 }
 const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
   const { t } = useTranslation()
+  const location = useLocation()
+  const isHome = location.pathname === '/'
+
   return (
     <Box sx={{ marginLeft: 'auto' }}>
       <Tabs
         value={currentTab}
         onChange={handleChange}
-        textColor="inherit"
+        textColor={'inherit'}
         indicatorColor={'primary'}
         variant="scrollable"
-        scrollButtons
+        scrollButtons="auto"
         allowScrollButtonsMobile
+        TabIndicatorProps={{ sx: { display: isHome ? 'none' : '' } }}
       >
-        <Tab label={t('main.title')} />
-        <Tab label={t('agenda.title')} />
+        <Tab label={t('program.title')} />
+        <Tab label={t('organizer.title')} />
         <Tab label={t('location.title')} />
-        <Tab label={t('join.title')} />
-        <Tab label={t('contact.title')} />
       </Tabs>
     </Box>
   )
