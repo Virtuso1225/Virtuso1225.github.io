@@ -10,7 +10,18 @@ const SideBarContainer = () => {
     setOpen(!open)
   }
   return (
-    <AppBar position="static" sx={{ background: 'inherit', borderBottom: 1, borderColor: 'white' }}>
+    <AppBar
+      position="static"
+      sx={{
+        position: 'sticky',
+        top: 0,
+        display: 'flex',
+        zIndex: 6,
+        background: 'inherit',
+        borderBottom: 1,
+        borderColor: 'white'
+      }}
+    >
       <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
         <Logo handleClicked={() => ''} />
         <IconButton size="large" edge="start" color="primary" aria-label="menu" sx={{ mr: 2 }} onClick={handleDrawer}>

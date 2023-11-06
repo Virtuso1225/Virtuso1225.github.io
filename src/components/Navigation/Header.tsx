@@ -38,10 +38,12 @@ const Header = () => {
   return (
     <Box
       sx={{
+        position: 'sticky',
+        top: 0,
         display: 'flex',
         width: '100vw',
-        height: '70px',
-        alignItems: 'center'
+        alignItems: 'center',
+        zIndex: 6
       }}
     >
       <Tabs

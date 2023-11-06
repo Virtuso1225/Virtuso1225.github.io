@@ -1,10 +1,9 @@
-import { Box, styled, useMediaQuery } from '@mui/material'
+import { Box, styled, useMediaQuery, useTheme } from '@mui/material'
 import { useEffect, useState } from 'react'
 import Header from './Header'
 import { Outlet, useLocation } from 'react-router-dom'
 import '../../css/background.css'
 import SideBarContainer from './SideBar'
-import { useTheme } from '@emotion/react'
 
 const ThemeWrapper = styled(Box)(
   () => `
@@ -31,14 +30,12 @@ const Navigation = () => {
     <Box
       width="100vw"
       minHeight="100vh"
-      sx={[
-        {
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }
-      ]}
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
       className={showBackgroundImage ? 'show-background' : ''}
     >
       {isMobile ? <SideBarContainer /> : <Header />}
