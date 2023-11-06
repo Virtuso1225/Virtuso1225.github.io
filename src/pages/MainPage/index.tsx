@@ -1,10 +1,16 @@
 import { Box, Typography } from '@mui/material'
+import { Helmet } from 'react-helmet-async'
 
 const MainPage = () => {
   return (
-    <Box>
-      <Typography>메인 페이지</Typography>
-    </Box>
+    <>
+      <Helmet>
+        <title>메인 페이지</title>
+      </Helmet>
+      <Box>
+        <Typography>메인 페이지</Typography>
+      </Box>
+    </>
   )
 }
 

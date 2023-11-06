@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import Header from './Header'
 import { Outlet, useLocation } from 'react-router-dom'
 import '../../css/background.css'
+import SideBarContainer from './SideBar'
+import { useTheme } from '@emotion/react'
 
 const ThemeWrapper = styled(Box)(
   () => `
@@ -15,7 +17,8 @@ const ThemeWrapper = styled(Box)(
 )
 
 const Navigation = () => {
-  const matches = useMediaQuery('(max-width:800px)')
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('sm'))
   const [isMobile, setIsMobile] = useState(matches)
   const location = useLocation()
 
@@ -38,7 +41,7 @@ const Navigation = () => {
       ]}
       className={showBackgroundImage ? 'show-background' : ''}
     >
-      {isMobile ? 'Mobile' : <Header />}
+      {isMobile ? <SideBarContainer /> : <Header />}
       <ThemeWrapper>
         <Outlet />
       </ThemeWrapper>

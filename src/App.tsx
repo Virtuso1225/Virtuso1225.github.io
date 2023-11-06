@@ -3,6 +3,7 @@ import router from './router'
 import { ThemeProvider, createTheme } from '@mui/material'
 import COLORS from 'src/theme/colors'
 import 'src/translate/index'
+import PretendardVariable from '@src/assets/fonts/PretendardVariable.ttf'
 
 const App = () => {
   const content = useRoutes(router)
@@ -11,6 +12,9 @@ const App = () => {
   const mainColor = location.pathname === '/' ? COLORS.primary : COLORS.antiPrimary
 
   const theme = createTheme({
+    typography: {
+      fontFamily: 'PretendardVariable'
+    },
     palette: {
       primary: {
         main: COLORS.primary,
@@ -22,6 +26,11 @@ const App = () => {
       }
     },
     components: {
+      MuiCssBaseline: {
+        styleOverrides: {
+          '@font-face': [PretendardVariable]
+        }
+      },
       MuiTabs: {
         styleOverrides: {
           indicator: {
