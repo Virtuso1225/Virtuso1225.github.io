@@ -4,37 +4,19 @@ import Logo from './Logo'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import LanguageBtn from './LanguageBtn'
-
+import NavigationPaths from '@src/data/navigation'
 const Header = () => {
   const [currentTab, setCurrentTab] = useState(0)
   const navigate = useNavigate()
+
   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setCurrentTab(newValue)
-    switch (newValue) {
-      case 0:
-        navigate('/')
-        break
-      case 1:
-        navigate('/agenda')
-        break
-      case 2:
-        navigate('/location')
-        break
-      case 3:
-        navigate('/join')
-        break
-      case 4:
-        navigate('/contact')
-        break
-      default:
-        break
-    }
+    navigate(NavigationPaths[newValue])
   }
 
   const handleClickLogo = () => {
     setCurrentTab(0)
   }
-
 
   return (
     <Box

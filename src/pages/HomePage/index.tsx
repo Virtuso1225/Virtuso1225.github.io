@@ -1,12 +1,12 @@
 import { Box, Grid, Typography, useTheme } from '@mui/material'
 import { Helmet } from 'react-helmet-async'
 
-const MainPage = () => {
+const HomePage = () => {
   const theme = useTheme()
   return (
     <>
       <Helmet>
-        <title>메인 페이지</title>
+        <title>AI TECH DAY 2023</title>
       </Helmet>
       <Box
         sx={{
@@ -48,4 +48,4 @@ const MainPage = () => {
   )
 }
 
-export default MainPage
+export default HomePage

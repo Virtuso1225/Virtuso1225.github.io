@@ -43,6 +43,16 @@ const App = () => {
             }
           }
         },
+        MuiTab: {
+          styleOverrides: {
+            root: {
+              color: mainColor,
+              '&.Mui-selected': {
+                color: location.pathname === '/' ? '#939495' : mainColor
+              }
+            }
+          }
+        },
         MuiTypography: {
           styleOverrides: {
             root: {

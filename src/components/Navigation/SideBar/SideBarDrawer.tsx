@@ -35,7 +35,7 @@ const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
       </AppBar>
       <Box sx={{ margin: 4 }}>
         <List>
-          {['agenda', 'location', 'contact', 'join'].map((text, index) => (
+          {['program', 'organizer', 'location'].map((text, index) => (
             <ListItem key={index} sx={{ borderBottom: 1, borderColor: 'inherit', alignItems: 'center', height: 60 }}>
               <Link to={`/${text}`} onClick={handleDrawerClose} style={{ textDecoration: 'none' }}>
                 <Typography>{t(`${text}.title`)}</Typography>
