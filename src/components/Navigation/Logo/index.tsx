@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 interface LogoProps {
-  handleClicked: () => void
+  handleClicked?: () => void
 }
 const Logo = ({ handleClicked }: LogoProps) => {
   const { t } = useTranslation()
