@@ -30,7 +30,7 @@ const App = () => {
       components: {
         MuiCssBaseline: {
           styleOverrides: {
-            '@font-face': [PretendardVariable]
+            '@fontFace': [PretendardVariable]
           }
         },
         MuiTabs: {
@@ -40,16 +40,6 @@ const App = () => {
             },
             root: {
               color: mainColor
-            }
-          }
-        },
-        MuiTab: {
-          styleOverrides: {
-            root: {
-              color: mainColor,
-              '&.Mui-selected': {
-                color: location.pathname === '/' ? '#939495' : mainColor
-              }
             }
           }
         },

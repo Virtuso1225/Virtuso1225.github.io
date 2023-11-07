@@ -14,7 +14,7 @@ const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
   return (
     <Box sx={{ marginLeft: 'auto' }}>
       <Tabs
-        value={currentTab}
+        value={isHome ? false : currentTab}
         onChange={handleChange}
         textColor={'inherit'}
         indicatorColor={'primary'}
