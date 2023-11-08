@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
+import { Box, Divider, Grid, Typography, useTheme } from '@mui/material'
 import PageContainer from '@src/components/PageContainer'
 import PageTitle from '@src/components/PageContainer/PageTitle'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
