@@ -61,7 +61,7 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
       '2016 SK텔레콤',
       '2016 T-Brain 장'
     ],
-    lectureTitle: 'AI를 통해 만들어가는 더 나은 세상',
+    lectureTitle: 'SKT A.X LLM',
     lectureContent: [
       '- 기존 텔레콤 서비스와 초거대 언어 모델(LLM) 기술 및 이미지 생성 기술들의 융·복합 서비스 소개',
       '- AI에서 AGI로 인간 넘어서는 인공지능 소개'
