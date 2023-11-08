@@ -29,6 +29,10 @@ const App = () => {
         text: {
           primary: COLORS.primary,
           secondary: COLORS.transparentText
+        },
+        background: {
+          default: COLORS.background,
+          paper: COLORS.antibackground,
         }
       },
       components: {

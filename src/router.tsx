@@ -7,6 +7,7 @@ import {
   IntroductionPage,
   NotFoundPage
 } from '@src/components/Loader/lazy'
+import RegisterPage from './pages/RegisterPage'
 
 const routes: RouteObject[] = [
   {
@@ -24,6 +25,10 @@ const routes: RouteObject[] = [
       {
         path: '/location',
         element: <LocationPage />
+      },
+      {
+        path: '/register',
+        element: <RegisterPage />
       },
       {
         path: '/introduction',
