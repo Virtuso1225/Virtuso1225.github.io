@@ -17,9 +17,9 @@ const ScheduleGrid = () => {
           <TitleTypography>연사</TitleTypography>
         </Grid>
       </Grid>
-      <Divider color="secondary" sx={{ borderWidth: 1 }} />
+      <Divider sx={{ borderWidth: 1, backgroundColor: '#02306C' }} />
       {scheduleData.map((item, index) => (
-        <>
+        <Box key={index}>
           <Grid container spacing={3} key={index}>
             <Grid item xs={2}>
               <ContentTypography>{item.time}</ContentTypography>
@@ -42,7 +42,7 @@ const ScheduleGrid = () => {
             )}
           </Grid>
           <Divider />
-        </>
+        </Box>
       ))}
     </Container>
   )
