@@ -1,17 +1,15 @@
 import { AppBar, Box, Drawer, IconButton, List, ListItem, Toolbar, Typography } from '@mui/material'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import Logo from '../Logo'
-import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
-import LanguageBtn from '../LanguageBtn'
-
+import { Link, useLocation } from 'react-router-dom'
+import NavigationPaths from '@src/data/navigation'
 interface SideBarDrawerProps {
   open: boolean
   handleDrawerClose: () => void
 }
 
 const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
-  const { t } = useTranslation()
+  const location = useLocation()
 
   return (
     <Drawer
