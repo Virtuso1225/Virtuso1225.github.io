@@ -12,12 +12,12 @@ const Header = () => {
   const [currentTab, setCurrentTab] = useState(handleTabsDefault(location.pathname))
 
   useEffect(() => {
-    setCurrentTab(NavigationPaths.indexOf(location.pathname))
+    setCurrentTab(NavigationPaths.findIndex(page => page.path === location.pathname))
   }, [location.pathname])
 
   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setCurrentTab(newValue)
-    navigate(NavigationPaths[newValue])
+    navigate(NavigationPaths[newValue].path)
   }
 
   const handleClickLogo = () => {

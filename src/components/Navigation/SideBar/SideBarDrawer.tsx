@@ -33,17 +33,14 @@ const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
       </AppBar>
       <Box sx={{ margin: 4 }}>
         <List>
-          {['program', 'introduction', 'location'].map((text, index) => (
+          {NavigationPaths.map((page, index) => (
             <ListItem key={index} sx={{ borderBottom: 1, borderColor: 'inherit', alignItems: 'center', height: 60 }}>
-              <Link to={`/${text}`} onClick={handleDrawerClose} style={{ textDecoration: 'none' }}>
-                <Typography>{t(`${text}.title`)}</Typography>
+              <Link to={`${page.path}`} onClick={handleDrawerClose} style={{ textDecoration: 'none' }}>
+                <Typography fontWeight={location.pathname === page.path ? 'bold' : 'normal'}>{page.name}</Typography>
               </Link>
             </ListItem>
           ))}
         </List>
-      </Box>
-      <Box sx={{ display: 'flex', flexDirection: 'row-reverse', margin: 4 }}>
-        <LanguageBtn />
       </Box>
     </Drawer>
   )
