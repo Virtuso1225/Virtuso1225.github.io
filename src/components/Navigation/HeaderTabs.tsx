@@ -18,7 +18,7 @@ const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
       >
         <Tab label="HOME" value={0} />
         <Tab label="프로그램" value={1} />
-        <Tab label="연사소개" value={2} />
+        <Tab label="초청강연자" value={2} />
         <Tab label="오시는길" value={3} />
       </Tabs>
     </Box>

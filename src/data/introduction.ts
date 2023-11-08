@@ -19,7 +19,7 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
   {
     name: '윤상두',
     position: '소장',
-    company: '네이버 클라우드',
+    company: '네이버 클라우드 AI Lab',
     career: [
       '2010, 2013, 2017: 서울대학교 전기컴퓨터공학부 학사,석사,박사 졸업',
       '2018~2022: 네이버 AI Lab Research Scientist',
