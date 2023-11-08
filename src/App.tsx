@@ -2,7 +2,6 @@ import { useLocation, useRoutes } from 'react-router-dom'
 import router from './router'
 import { CssBaseline, ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material'
 import COLORS from 'src/theme/colors'
-import 'src/translate/index'
 import PretendardVariable from '@src/assets/fonts/PretendardVariable.ttf'
 
 const App = () => {
@@ -24,7 +23,12 @@ const App = () => {
         },
         secondary: {
           main: COLORS.secondary,
-          contrastText: COLORS.antiSecondary
+          contrastText: COLORS.antiSecondary,
+          light: COLORS.textHover
+        },
+        text: {
+          primary: COLORS.primary,
+          secondary: COLORS.transparentText
         }
       },
       components: {

@@ -3,6 +3,8 @@ const COLORS = {
   secondary: '#02306C',
   dimWhite: '#f5f5f5',
   antiPrimary: '#212121',
-  antiSecondary: 'red'
+  antiSecondary: 'red', // TODO: to be changed
+  transparentText: 'rgba(255, 255, 255, 0.7)',
+  textHover: '#87CEFA'
 }
 export default COLORS
