@@ -9,7 +9,6 @@ const SPECIFIC_LOCATION = '고려대학교 하나스퀘어 강당 (지하1층)'
 
 const LocationPage = () => {
   const theme = useTheme()
-  const isLg = useMediaQuery(theme.breakpoints.up('lg'))
   return (
     <PageContainer>
       <Grid container sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
