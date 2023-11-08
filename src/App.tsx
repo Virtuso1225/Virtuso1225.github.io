@@ -24,7 +24,12 @@ const App = () => {
         },
         secondary: {
           main: COLORS.secondary,
-          contrastText: COLORS.antiSecondary
+          contrastText: COLORS.antiSecondary,
+          light: COLORS.textHover
+        },
+        text: {
+          primary: COLORS.primary,
+          secondary: COLORS.transparentText
         }
       },
       components: {
