@@ -24,7 +24,7 @@ const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
         TabIndicatorProps={{ sx: { display: isHome ? 'none' : '' } }}
       >
         <Tab label={t('program.title')} />
-        <Tab label={t('organizer.title')} />
+        <Tab label={t('introduction.title')} />
         <Tab label={t('location.title')} />
       </Tabs>
     </Box>

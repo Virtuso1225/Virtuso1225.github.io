@@ -4,7 +4,7 @@ import {
   Navigation,
   ProgramPage,
   LocationPage,
-  OrganizerPage,
+  IntroductionPage,
   NotFoundPage
 } from '@src/components/Loader/lazy'
 
@@ -26,8 +26,8 @@ const routes: RouteObject[] = [
         element: <LocationPage />
       },
       {
-        path: '/organizer',
-        element: <OrganizerPage />
+        path: '/introduction',
+        element: <IntroductionPage />
       },
       {
         path: '*',

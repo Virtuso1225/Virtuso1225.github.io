@@ -1,13 +1,15 @@
 import { Box, Tabs } from '@mui/material'
 import HeaderTabs from './HeaderTabs'
 import Logo from './Logo'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import LanguageBtn from './LanguageBtn'
 import NavigationPaths from '@src/data/navigation'
 const Header = () => {
   const [currentTab, setCurrentTab] = useState(0)
   const navigate = useNavigate()
+  const location = useLocation()
+  const main = location.pathname === '/'
 
   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setCurrentTab(newValue)
@@ -32,13 +34,14 @@ const Header = () => {
       <Tabs
         textColor={'inherit'}
         sx={{
-          borderBottom: 1,
+          borderBottom: main ? 1 : '',
           justifyContent: 'space-between',
           display: 'flex',
           width: '100vw',
           alignItems: 'center',
           paddingX: 4,
-          marginX: 12
+          background: main ? '' : '#fafafa',
+          boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)'
         }}
         value={0}
         TabIndicatorProps={{ sx: { display: 'none' } }}

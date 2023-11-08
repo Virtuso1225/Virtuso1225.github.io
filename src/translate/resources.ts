@@ -12,8 +12,8 @@ const resources = {
       location: {
         title: 'Location'
       },
-      organizer: {
-        title: 'Organizer'
+      introduction: {
+        title: 'Introduction'
       }
     }
   },
@@ -30,7 +30,7 @@ const resources = {
       location: {
         title: '오는 길'
       },
-      organizer: {
+      introduction: {
         title: '연사소개'
       }
     }

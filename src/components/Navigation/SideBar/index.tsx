@@ -3,8 +3,11 @@ import Logo from '@src/components/Navigation/Logo'
 import MenuIcon from '@mui/icons-material/Menu'
 import { useState } from 'react'
 import SideBarDrawer from './SideBarDrawer'
+import { useLocation } from 'react-router-dom'
 
 const SideBarContainer = () => {
+  const location = useLocation()
+  const isMain = location.pathname === '/'
   const [open, setOpen] = useState(false)
   const handleDrawer = () => {
     setOpen(!open)
@@ -17,7 +20,7 @@ const SideBarContainer = () => {
         top: 0,
         display: 'flex',
         zIndex: 6,
-        background: 'inherit',
+        background: isMain ? 'inherit' : '',
         borderBottom: 1,
         borderColor: 'white'
       }}
