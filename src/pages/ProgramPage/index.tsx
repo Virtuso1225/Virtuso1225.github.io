@@ -1,10 +1,11 @@
-import { Box, Typography } from '@mui/material'
+import PageContainer from '@src/components/PageContainer'
+import PageTitle from '@src/components/PageContainer/PageTitle'
 
 const ProgramPage = () => {
   return (
-    <Box>
-      <Typography>Progarm 페이지</Typography>
-    </Box>
+    <PageContainer>
+      <PageTitle title="PROGRAM" />
+    </PageContainer>
   )
 }
 
