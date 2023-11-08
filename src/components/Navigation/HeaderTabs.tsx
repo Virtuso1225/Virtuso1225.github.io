@@ -11,8 +11,8 @@ interface HeaderTabsProps {
 const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
   const { t } = useTranslation()
 
-  // const location = useLocation()
-  // const isHome = location.pathname === '/'
+  const location = useLocation()
+  const isHome = location.pathname === '/'
 
   return (
     <Box sx={{ marginLeft: 'auto' }}>
@@ -24,12 +24,11 @@ const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
         variant="scrollable"
         scrollButtons="auto"
         allowScrollButtonsMobile
-        // TabIndicatorProps={{ sx: { display: isHome ? 'none' : '' } }}
       >
-        <Tab label="home" />
-        <Tab label={t('program.title')} />
-        <Tab label={t('introduction.title')} />
-        <Tab label={t('location.title')} />
+        <Tab label="home" value={0} />
+        <Tab label={t('program.title')} value={1} />
+        <Tab label={t('introduction.title')} value={2} />
+        <Tab label={t('location.title')} value={3} />
       </Tabs>
     </Box>
   )
