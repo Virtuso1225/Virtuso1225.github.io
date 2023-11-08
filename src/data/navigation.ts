@@ -1,3 +1,3 @@
-const NavigationPaths = ['/program', '/introduction', '/location']
+const NavigationPaths = ['/', '/program', '/introduction', '/location']
 
 export default NavigationPaths

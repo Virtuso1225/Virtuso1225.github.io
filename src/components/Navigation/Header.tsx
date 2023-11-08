@@ -3,7 +3,6 @@ import HeaderTabs from './HeaderTabs'
 import Logo from './Logo'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-import LanguageBtn from './LanguageBtn'
 import NavigationPaths from '@src/data/navigation'
 const Header = () => {
   const [currentTab, setCurrentTab] = useState(0)
@@ -48,7 +47,6 @@ const Header = () => {
       >
         <Logo handleClicked={handleClickLogo} />
         <Box sx={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
-          <LanguageBtn />
           <HeaderTabs handleChange={handleChange} currentTab={currentTab} />
         </Box>
       </Tabs>
