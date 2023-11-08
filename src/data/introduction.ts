@@ -61,9 +61,10 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
       '2016 SK텔레콤',
       '2016 T-Brain 장'
     ],
+    lectureTitle: 'AI를 통해 만들어가는 더 나은 세상',
     lectureContent: [
-      '기존 텔레콤 서비스와 초거대 언어 모델(LLM) 기술 및 이미지 생성 기술들의 융·복합 서비스 소개',
-      'AI에서 AGI로 인간 넘어서는 인공지능 소개'
+      '- 기존 텔레콤 서비스와 초거대 언어 모델(LLM) 기술 및 이미지 생성 기술들의 융·복합 서비스 소개',
+      '- AI에서 AGI로 인간 넘어서는 인공지능 소개'
     ],
     profile: '/assets/kim.png'
   },
@@ -76,6 +77,7 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
       'Royal Holloway, University of London, 정보보안 (박사)',
       'University of Waterloo, 암호학 (석사)'
     ],
+    lectureTitle: 'AI & Security in Samsung SDS',
     lectureContent: [
       'SDS 연구소에서 수행하고 있는 AI, Security 분야 연구 분야 및 성과를 소개',
       'SDS 연구소 보안연구팀에서 수행하고 있는 연구분야 소개',
@@ -106,7 +108,10 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
     company: '한화시스템',
     career: ['2022-현재 한화시스템 기반기술연구소장', '2015-2022 한화시스템 팀장 (해양연구소 SW팀)'],
     lectureTitle: '국방 인공지능 동향과 사례',
-    lectureContent: [''],
+    lectureContent: [
+      '- 국내/외 국방 인공지능 연구 개발 동향 및 사례',
+      '- 무기 체계 별 단계별 인공지능의 적용 및 발전 방향'
+    ],
     profile: '/assets/kim_yoo.png'
   },
   {
@@ -119,7 +124,7 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
       '2007-2020 SK텔레콤 부장 (AI 센터)'
     ],
     lectureTitle: 'AI&Data in Hanwha Systems',
-    lectureContent: [''],
+    lectureContent: ['TBD'],
     profile: '/assets/shin.png'
   }
 ]
