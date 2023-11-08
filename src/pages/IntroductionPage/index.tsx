@@ -1,6 +1,8 @@
 import { Box, Divider, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { INVITED_LECTURER, LEADER } from '@src/data/introduction'
 import LectureContainer from './LectureContainer'
+import PageContainer from '@src/components/PageContainer'
+import PageTitle from '@src/components/PageContainer/PageTitle'
 
 const OrganizerPage = () => {
   const theme = useTheme()
@@ -8,19 +10,10 @@ const OrganizerPage = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   const isLg = useMediaQuery(theme.breakpoints.up('lg'))
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        width: '100vw',
-        flexDirection: 'column',
-        padding: matches ? theme.spacing(7) : theme.spacing(3, 1)
-      }}
-    >
+    <PageContainer>
       <Grid container sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         <Grid item>
-          <Typography variant="h4" fontWeight="900" color="secondary">
-            INTRODUCTION
-          </Typography>
+          <PageTitle title="INTRODUCTION" />
         </Grid>
         <Box
           sx={{
@@ -77,7 +70,7 @@ const OrganizerPage = () => {
           <LectureContainer lecturer={lecturer} key={index} />
         ))}
       </Grid>
-    </Box>
+    </PageContainer>
   )
 }
 
