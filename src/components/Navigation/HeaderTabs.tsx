@@ -1,14 +1,10 @@
 import { Box, Tab, Tabs } from '@mui/material'
 
-import { useTranslation } from 'react-i18next'
-
 interface HeaderTabsProps {
   currentTab: number
   handleChange: (event: React.SyntheticEvent, newValue: number) => void
 }
 const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
-  const { t } = useTranslation()
-
   return (
     <Box sx={{ marginLeft: 'auto' }}>
       <Tabs
@@ -20,10 +16,10 @@ const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
         scrollButtons="auto"
         allowScrollButtonsMobile
       >
-        <Tab label="home" value={0} />
-        <Tab label={t('program.title')} value={1} />
-        <Tab label={t('introduction.title')} value={2} />
-        <Tab label={t('location.title')} value={3} />
+        <Tab label="HOME" value={0} />
+        <Tab label="프로그램" value={1} />
+        <Tab label="연사소개" value={2} />
+        <Tab label="오시는길" value={3} />
       </Tabs>
     </Box>
   )
