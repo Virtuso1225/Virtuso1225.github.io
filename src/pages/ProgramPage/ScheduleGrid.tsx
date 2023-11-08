@@ -1,5 +1,5 @@
 import { Grid, Typography, Container, styled, Divider, Box, useMediaQuery } from '@mui/material'
-import scheduleData from '@src/data/data'
+import scheduleData from '@src/data/programs'
 
 const ScheduleGrid = () => {
   const isMobile = useMediaQuery('(max-width:1000px)')
