@@ -2,7 +2,7 @@ import { Box, Tabs } from '@mui/material'
 import HeaderTabs from './HeaderTabs'
 import Logo from './Logo'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import NavigationPaths from '@src/data/navigation'
 import { handleTabsDefault } from '@src/utils/tabsIndicator'
 const Header = () => {
@@ -10,6 +10,10 @@ const Header = () => {
   const location = useLocation()
   const main = location.pathname === '/'
   const [currentTab, setCurrentTab] = useState(handleTabsDefault(location.pathname))
+
+  useEffect(() => {
+    setCurrentTab(NavigationPaths.indexOf(location.pathname))
+  }, [location.pathname])
 
   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setCurrentTab(newValue)
