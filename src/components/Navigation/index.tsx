@@ -2,8 +2,8 @@ import { Box, styled, useMediaQuery, useTheme } from '@mui/material'
 import { useEffect, useState } from 'react'
 import Header from './Header'
 import { Outlet, useLocation } from 'react-router-dom'
-import '../../css/background.css'
 import SideBarContainer from './SideBar'
+import BackgroundImage from './BackgroundImg'
 
 const ThemeWrapper = styled(Box)(
   () => `
@@ -28,20 +28,30 @@ const Navigation = () => {
   }, [matches])
   return (
     <Box
-      width="100vw"
-      minHeight="100vh"
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center'
+        position: 'relative',
+        backgroundColor: showBackgroundImage ? theme.palette.background.paper : theme.palette.background.default,
+        margin: 0,
+        padding: 0,
+        overflow: 'hidden'
       }}
-      className={showBackgroundImage ? 'show-background' : ''}
     >
-      {isMobile ? <SideBarContainer /> : <Header />}
-      <ThemeWrapper>
-        <Outlet />
-      </ThemeWrapper>
+      {showBackgroundImage && <BackgroundImage />}
+      <Box
+        width="100vw"
+        minHeight="100vh"
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        {isMobile ? <SideBarContainer /> : <Header />}
+        <ThemeWrapper>
+          <Outlet />
+        </ThemeWrapper>
+      </Box>
     </Box>
   )
 }
