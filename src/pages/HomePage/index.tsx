@@ -32,10 +32,10 @@ const HomePage = () => {
           <Box>
             <Box display={'flex'} mt={1} alignItems={'baseline'}>
               <Box display={matches ? 'block' : 'flex'} alignItems={'baseline'}>
+                <Typography variant={matches ? 'subtitle2' : 'h5'}>고려대학교 ICT명품인재양성사업단&nbsp;</Typography>
                 <Typography variant={matches ? 'h6' : 'h4'} fontWeight={'bold'}>
                   2023&nbsp;
                 </Typography>
-                <Typography variant={matches ? 'subtitle2' : 'h5'}>고려대학교 ICT명품인재양성사업단</Typography>
               </Box>
             </Box>
             <Typography variant={matches ? 'h2' : 'h1'} sx={{ fontWeight: 900, marginBottom: theme.spacing(2) }}>

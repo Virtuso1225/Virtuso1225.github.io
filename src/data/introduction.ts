@@ -49,11 +49,11 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
       '서울대학교 전기정보공학부 학사 (2000)'
     ],
     career: [
-      '2020- 현재 LGAI연구원상무(AppliedAIResearch그룹장)',
-      '2021- 현재 AI미래포럼공동의장',
-      '2019-2020 LG사이언스파크연구위원(DataIntelligenceLab장)',
-      '2013-2019 SKTelecom매니저(AI기술Unit)',
-      '2007-2013 삼성전자책임연구원(무선사업부VoiceService개발그룹)'
+      '2020 - 현재 LG AI연구원 상무 (Applied AI Research 그룹장)',
+      '2021 - 현재 AI미래포럼 공동의장',
+      '2019 - 2020 LG 사이언스파크 연구위원 (Data Intelligence Lab장)',
+      '2013 - 2019 SK Telecom 매니저 (AI 기술 Unit)',
+      '2007 - 2013 삼성전자 책임연구원 (무선사업부 Voice Service 개발그룹)'
     ],
     lectureTitle: 'AI를 통해 만들어가는 더 나은 세상',
     lectureContent: [
@@ -62,16 +62,15 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
     ],
     profile: '/assets/lim.jpeg'
   },
-
   {
     name: '김지원',
     position: '부사장',
     company: 'SKT',
     education: ['MIT EECS 석사 (2007)', 'MIT EECS 학사 (2007)'],
     career: [
-      '2016- 현재 SKT 부사장 (에이닷 Tech 대화 담당)',
+      '2016 - 현재 SKT 부사장 (에이닷 Tech 대화 담당)',
       '2020 대통령 직속 국가과학기술자문회의 자문위원',
-      '2007-2016 삼성전자 종합기술원 전문연구원'
+      '2007 -2016 삼성전자 종합기술원 전문연구원'
     ],
     lectureTitle: 'SKT A.X LLM',
     lectureContent: [
@@ -131,9 +130,9 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
     company: '한화시스템',
     education: ['서울대학교 산업공학과 석사 (1997)'],
     career: [
-      '2022- 현재 한화시스템 상무 (Data eXcellence 담당)',
-      '2020-2022 한화시스템 상무 (미래혁신센터)',
-      '2007-2020 SKT 부장 (AI 센터)'
+      '2022 - 현재 한화시스템 상무 (Data eXcellence 담당)',
+      '2020 - 2022 한화시스템 상무 (미래혁신센터)',
+      '2007 - 2020 SKT 부장 (AI 센터)'
     ],
     lectureTitle: 'AI & Data in Hanwha Systems',
     lectureContent: [

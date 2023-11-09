@@ -62,7 +62,7 @@ const OrganizerPage = () => {
           }}
         >
           <Typography variant="h4" fontWeight="900" color="secondary" sx={{ alignSelf: 'flex-end' }}>
-            INVITED LECTURERS
+            INVITED SPEAKERS
           </Typography>
           {!isMobile && <Divider sx={{ height: 3, width: '70%', backgroundColor: '#02306C', marginLeft: 1 }} />}
         </Box>
