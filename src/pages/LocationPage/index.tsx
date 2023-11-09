@@ -81,8 +81,8 @@ const LocationPage = () => {
             </Typography>
             <Divider sx={{ height: 3, width: '12%', backgroundColor: '#02306C', ml: theme.spacing(2) }} />
           </Box>
-          <Box>
-            <img src="/assets/blueprint.svg" width="100%" />
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img src="/assets/NewBluePrint.png" width="70%" />
           </Box>
         </Grid>
       </Grid>

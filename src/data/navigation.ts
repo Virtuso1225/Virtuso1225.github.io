@@ -15,7 +15,7 @@ const NavigationPaths = [
   },
   {
     path: '/register',
-    name: '등록안내'
+    name: '사전등록'
   },
   {
     path: '/location',

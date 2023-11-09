@@ -34,7 +34,7 @@ const OrganizerPage = () => {
           </Typography>
           <Grid container sx={{ display: 'flex', flexDirection: 'row' }}>
             <Grid item lg={4} md={12}>
-              <img src={LEADER.profile} width={150} height={200} />
+              <img src={LEADER.profile} width={180} height={240} />
             </Grid>
             <Grid item lg={8} md={12}>
               <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -62,7 +62,7 @@ const OrganizerPage = () => {
           }}
         >
           <Typography variant="h4" fontWeight="900" color="secondary" sx={{ alignSelf: 'flex-end' }}>
-            INVITED LECTURER
+            INVITED LECTURERS
           </Typography>
           {!isMobile && <Divider sx={{ height: 3, width: '70%', backgroundColor: '#02306C', marginLeft: 1 }} />}
         </Box>
