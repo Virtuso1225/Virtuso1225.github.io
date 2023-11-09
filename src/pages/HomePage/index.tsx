@@ -1,9 +1,13 @@
-import { Box, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
+import { Box, Button, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { Helmet } from 'react-helmet-async'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import { Link } from 'react-router-dom'
 import { LinkTypography } from '@src/components/LinkBox'
+import LinkIcon from '@mui/icons-material/Link'
+
+const REGISTER_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdag1YBvFK1OUlXSwLjC5CnF_8zLV-QcHaPChbst2XZomBDgA/viewform'
 
 const HomePage = () => {
   const theme = useTheme()
@@ -53,6 +57,16 @@ const HomePage = () => {
                   <LocationOnIcon color="inherit" fontSize="small" />
                   <Typography variant={matches ? 'body2' : 'body1'} ml={1} fontWeight={'regular'} color="inherit">
                     고려대학교 하나스퀘어 강당 (지하 1층)
+                  </Typography>
+                </LinkTypography>
+              </Link>
+            </Grid>
+            <Grid mt={1}>
+              <Link to="/" style={{ textDecoration: 'none' }} onClick={() => window.open(REGISTER_URL, '_blank')}>
+                <LinkTypography>
+                  <LinkIcon sx={{ width: 21, height: 21 }} />
+                  <Typography variant={matches ? 'body2' : 'body1'} ml={1} fontWeight={'regular'} color="inherit">
+                    사전등록자에게는 배지(네임택)와 행사 당일 사용가능한 쿠폰을 제공합니다
                   </Typography>
                 </LinkTypography>
               </Link>
