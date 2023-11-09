@@ -12,46 +12,7 @@ const OrganizerPage = () => {
   return (
     <PageContainer>
       <Grid container sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-        {/* <Grid item>
-          <PageTitle title="INTRODUCTION" />
-        </Grid>
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            padding: matches ? theme.spacing(3) : '',
-            mt: theme.spacing(10),
-            width: isLg ? '48%' : '80%'
-          }}
-        >
-          <Typography
-            variant="h4"
-            fontWeight="900"
-            color="secondary"
-            sx={{ alignSelf: 'flex-end', mb: theme.spacing(3) }}
-          >
-            LEADER
-          </Typography>
-          <Grid container sx={{ display: 'flex', flexDirection: 'row' }}>
-            <Grid item lg={4} md={12}>
-              <img src={LEADER.profile} width={180} height={240} />
-            </Grid>
-            <Grid item lg={8} md={12}>
-              <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <Divider sx={{ height: 3, width: '8%', backgroundColor: '#02306C', mb: theme.spacing(1) }} />
-                <Typography variant="h4" fontWeight="700" color="anti.primary">
-                  {LEADER.name}
-                </Typography>
-                <Typography variant="h6" fontWeight="500" color="secondary">
-                  {LEADER.position}
-                </Typography>
-                <Typography variant="body2" fontWeight="400">
-                  {LEADER.content}
-                </Typography>
-              </Box>
-            </Grid>
-          </Grid>
-        </Box> */}
+       
         <Box
           sx={{
             display: 'flex',

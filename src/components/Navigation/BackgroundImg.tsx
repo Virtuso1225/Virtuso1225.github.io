@@ -17,7 +17,7 @@ const BackgroundImage = () => {
         /assets/background.jpg?width=400 400w,
         /assets/background.jpg?width=800 800w"
         sizes="(max-width: 800px) 100vw, 50vw"
-        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
         loading="lazy"
         decoding="async"
         alt="background image"

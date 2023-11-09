@@ -1,8 +1,8 @@
 export const LEADER = {
-  name: '한정현',
-  position: '고려대학교 ICT명품인재 사업단 단장',
+  name: '한정현 교수',
+  position: 'ICT명품인재양성사업단 단장',
   content:
-    '2020년에 선정되어 벌써 4년 차의 막바지에 다다른 고려대학교 ICT명품인재양성사업단은 오는 11월 22일(수) 본교 하나스퀘어에서 사업단 1년 성과를 총결산하는 2023 AI Tech Day를 개최합니다. 본 행사에서는 사업단 소속 교수들이 올해 발표한 top-tier conference 논문과 현재 진행 중인 연구를 결합하여 압축 발표하고, 네이버, LG, SKT, 삼성SDS, 한화시스템, 카카오브레인의 AI 연구개발 책임자들이 각 기업의 AI 연구개발 성과와 미래 전략을 발표합니다. 여기에 더불어, 사업단 소속 연구실의 포스터와 데모 세션이 준비되고, 기업체 홍보 및 리쿠르팅 부스도 마련됩니다. AI의 현재와 미래를 보고자 하는 분들의 많은 참석 바랍니다.',
+    '고려대학교 ICT명품인재양성사업단은 11월 22일(수) 본교 하나스퀘어에서 사업단 1년 성과를 총결산하는 2023 AI Tech Day를 개최합니다. 본 행사에서는 사업단 소속 교수들이 올해 발표한 top-tier conference 논문과 현재 진행 중인 연구를 결합하여 압축 발표하고, 네이버, LG, SKT, 삼성SDS, 한화시스템, 카카오브레인의 AI 연구개발 책임자들이 각 기업의 AI 연구개발 성과와 미래 전략을 발표합니다. 여기에 더불어, 사업단 소속 연구실의 포스터와 데모 세션이 준비되고, 기업체 홍보 및 리쿠르팅 부스도 마련됩니다. AI의 현재와 미래를 보고자 하는 분들의 많은 참석 바랍니다.',
   profile: '/assets/Han.png'
 }
 
@@ -52,7 +52,7 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
       '2020 - 현재 LG AI연구원 상무 (Applied AI Research 그룹장)',
       '2021 - 현재 AI미래포럼 공동의장',
       '2019 - 2020 LG 사이언스파크 연구위원 (Data Intelligence Lab장)',
-      '2013 - 2019 SK Telecom 매니저 (AI 기술 Unit)',
+      '2013 - 2019 SKT 매니저 (AI 기술 Unit)',
       '2007 - 2013 삼성전자 책임연구원 (무선사업부 Voice Service 개발그룹)'
     ],
     lectureTitle: 'AI를 통해 만들어가는 더 나은 세상',
@@ -70,7 +70,7 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
     career: [
       '2016 - 현재 SKT 부사장 (에이닷 Tech 대화 담당)',
       '2020 대통령 직속 국가과학기술자문회의 자문위원',
-      '2007 -2016 삼성전자 종합기술원 전문연구원'
+      '2007 - 2016 삼성전자 종합기술원 전문연구원'
     ],
     lectureTitle: 'SKT A.X LLM',
     lectureContent: [
@@ -84,7 +84,7 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
     position: '마스터',
     company: '삼성 SDS',
     education: ['Royal Holloway, University of London 정보보안 박사', 'University of Waterloo 암호학 석사'],
-    career: ['2013- 현재 삼성SDS 마스터 (보안연구팀)', '2009-2013 LG전자 선임연구원'],
+    career: ['2013 - 현재 삼성SDS 마스터 (보안연구팀)', '2009 - 2013 LG전자 선임연구원'],
     lectureTitle: 'AI & Security in Samsung SDS',
     lectureContent: [
       'SDS 연구소에서 수행하고 있는 AI, Security 분야 연구 분야 및 성과 소개',
@@ -116,12 +116,9 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
     position: '상무',
     company: '한화시스템',
     education: ['서울대학교 산업공학과 석사 (1997)'],
-    career: ['2022-현재 한화시스템 기반기술연구소장', '2015-2022 한화시스템 팀장 (해양연구소 SW팀)'],
+    career: ['2022 - 현재 한화시스템 기반기술연구소장', '2015 - 2022 한화시스템 팀장 (해양연구소 SW팀)'],
     lectureTitle: '국방 인공지능 동향과 사례',
-    lectureContent: [
-      '국내/외 국방 인공지능 연구 개발 동향 및 사례',
-      '무기 체계 별 단계별 인공지능의 적용 및 발전 방향'
-    ],
+    lectureContent: ['국내/외 국방 인공지능 연구 개발 동향 및 사례', '무기 체계별 단계별 인공지능의 적용 및 발전 방향'],
     profile: '/assets/kim_yoo.png'
   },
   {
