@@ -93,10 +93,10 @@ const HomePage = () => {
               사업단 산하 연구실 포스터 전시 및 데모
             </Typography>
             <Typography variant="caption" mt={1}>
-              AI 기업 연구개발 성과 및 미래
+              AI 기업 연구개발 성과 및 미래 전략 발표
             </Typography>
             <Typography variant="caption" mt={1}>
-              전략 발표 기업체 홍보 및 리크루팅
+              기업체 홍보 및 리크루팅
             </Typography>
           </Box>
           <Box mt={4}>
