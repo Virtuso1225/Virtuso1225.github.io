@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
+import { Box, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { Helmet } from 'react-helmet-async'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
