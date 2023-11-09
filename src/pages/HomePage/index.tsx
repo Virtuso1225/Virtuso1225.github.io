@@ -31,7 +31,7 @@ const HomePage = () => {
                 <Typography variant={matches ? 'h6' : 'h4'} fontWeight={'bold'}>
                   2023&nbsp;
                 </Typography>
-                <Typography variant={matches ? 'subtitle2' : 'h5'}>고려대학교 ICT 명품인재양성사업단</Typography>
+                <Typography variant={matches ? 'subtitle2' : 'h5'}>고려대학교 ICT명품인재양성사업단</Typography>
               </Box>
             </Box>
             <Typography variant={matches ? 'h2' : 'h1'} sx={{ fontWeight: 900, marginBottom: theme.spacing(2) }}>
@@ -65,25 +65,24 @@ const HomePage = () => {
               초청강연
             </Typography>
             <Typography variant="caption" mt={1}>
-              네이버클라우드 &nbsp;/ &nbsp; LG AI Research &nbsp;/ &nbsp; SKT / &nbsp; 삼성SDS &nbsp;/ &nbsp; 한화시스템
-              &nbsp;/ &nbsp; 카카오브레인
+              네이버클라우드, LG AI Research, 삼성SDS, 한화시스템, 카카오브레인
             </Typography>
           </Box>
           <Box mt={4}>
             <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>
-              연구성과 공유
+              연구 교류 및 성과 공유
             </Typography>
             <Typography variant="caption" mt={1}>
-              산업체 연구 소개 &nbsp;/ &nbsp; 포스터,데모 시상
+              사업단 소속 교수진 논문 성과 발표 사업단 산하 연구실 포스터 전시 및 데모 AI 기업 연구개발 성과 및 미래
+              전략 발표 기업체 홍보 및 리크루팅
             </Typography>
           </Box>
           <Box mt={4}>
             <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>
-              5개 기업 Recruiting
+              Recruiting 참여 기업
             </Typography>
             <Typography variant="caption" mt={1}>
-              삼성리서치 &nbsp;/ &nbsp; 삼성전기 &nbsp;/ &nbsp; 한화시스템 &nbsp;/ &nbsp; 퓨리오사 AI &nbsp;/ &nbsp;
-              VIVE STUDIOS
+              Samsung Research, 삼성전기, 한화시스템, FuriosaAI, VIVE STUDIOS 등
             </Typography>
           </Box>
         </Grid>
