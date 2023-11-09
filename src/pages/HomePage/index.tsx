@@ -11,17 +11,8 @@ const HomePage = () => {
       <Helmet>
         <title>AI TECH DAY 2023</title>
       </Helmet>
-      <Box height={'100%'}>
-        <Grid
-          container
-          justifyContent="center"
-          alignContent={'center'}
-          // spacing={4}
-          alignItems={'center'}
-          width={'90vw'}
-          pt={matches ? 2 : 6}
-          // sx={{ border: 1, borderColor: 'red' }}
-        >
+      <Box height={matches ? '100%' : '92vh'}>
+        <Grid container spacing={4} width={'90vw'} pt={matches ? 2 : 6} height={'100%'}>
           <Title />
           <Leader />
         </Grid>

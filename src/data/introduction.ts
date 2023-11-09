@@ -57,8 +57,8 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
     ],
     lectureTitle: 'AI를 통해 만들어가는 더 나은 세상',
     lectureContent: [
-      'AI가 기업현장에서 R&D와 생산공정 고도화에 어떻게 활용되고 있는지 사례소개',
-      'AI가 만들어가는 세상과 앞으로의 발전 방향에 대해 제시'
+      'AI가 기업현장에서 R&D와 생산공정 고도화에 활용되고 있는 사례 소개',
+      'AI가 만들어가는 세상과 앞으로의 발전 방향 제시'
     ],
     profile: '/assets/lim.jpeg'
   },

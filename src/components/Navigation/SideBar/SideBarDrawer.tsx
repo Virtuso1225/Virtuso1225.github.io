@@ -3,6 +3,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import Logo from '../Logo'
 import { Link, useLocation } from 'react-router-dom'
 import NavigationPaths from '@src/data/navigation'
+import { REGISTER_URL } from '../HeaderTabs'
 interface SideBarDrawerProps {
   open: boolean
   handleDrawerClose: () => void

@@ -12,13 +12,17 @@ const Title = () => {
   const theme = useTheme()
   const matches = useMediaQuery('(max-width:1000px)')
   return (
-    <Grid item sm={12} md={6} lg={6} mb={10} justifyContent={'space-between'}>
-      <Box>
-        <Box display={'flex'} mt={1} alignItems={'baseline'}>
-          <Box display={matches ? 'block' : 'flex'} alignItems={'baseline'}>
-            <Typography variant={matches ? 'subtitle2' : 'h5'}>고려대학교 ICT명품인재양성사업단&nbsp;</Typography>
-          </Box>
-        </Box>
+    <Grid
+      item
+      sm={12}
+      md={6}
+      lg={6}
+      mb={10}
+      justifyContent={'space-between'}
+      sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}
+    >
+      <Box sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }} mt={12}>
+        <Typography variant={matches ? 'subtitle2' : 'h5'}>고려대학교 ICT명품인재양성사업단&nbsp;</Typography>
         <Typography variant={'h2'} sx={{ fontWeight: 900, marginBottom: theme.spacing(2) }}>
           2023 AI TECH DAY
         </Typography>
@@ -29,7 +33,7 @@ const Title = () => {
             <LinkTypography>
               <CalendarTodayIcon color="inherit" fontSize="small" />
               <Typography variant={matches ? 'body2' : 'body1'} ml={1} fontWeight={'regular'} color="inherit">
-                2023.11.22 (수) 10:00 ~ 18:10
+                2023.11.22 (수) 10:00 ~ 18:20
               </Typography>
             </LinkTypography>
           </Link>
@@ -40,7 +44,7 @@ const Title = () => {
             <LinkTypography>
               <LocationOnIcon color="inherit" fontSize="small" />
               <Typography variant={matches ? 'body2' : 'body1'} ml={1} fontWeight={'regular'} color="inherit">
-                고려대학교 하나스퀘어 강당 (지하 1층)
+                고려대학교 하나스퀘어 (지하 1층)
               </Typography>
             </LinkTypography>
           </Link>
@@ -61,14 +65,8 @@ const Title = () => {
           </Box>
         </Grid>
       </Box>
-      <Box mt={2}>
-        <Box mt={4}>
-          <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>
-            초청강연
-          </Typography>
-          <Typography variant="caption">네이버, LG, SKT, 삼성SDS, 한화시스템, 카카오브레인</Typography>
-        </Box>
-        <Box mt={2} sx={{ display: 'flex', flexDirection: 'column' }}>
+      <Box mt={6}>
+        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>
             연구 교류 및 성과 공유
           </Typography>
@@ -76,6 +74,12 @@ const Title = () => {
           <Typography variant="caption">사업단 산하 연구실 포스터 전시 및 데모</Typography>
           <Typography variant="caption">AI 기업 연구개발 성과 및 미래 전략 발표</Typography>
           <Typography variant="caption">기업체 홍보 및 리크루팅</Typography>
+        </Box>
+        <Box mt={2}>
+          <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>
+            초청강연
+          </Typography>
+          <Typography variant="caption">네이버, LG, SKT, 삼성SDS, 한화시스템, 카카오브레인</Typography>
         </Box>
         <Box mt={2}>
           <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>

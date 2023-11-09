@@ -5,7 +5,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 import KakaoMap from './KakaoMap'
 
 const LOCATION = '서울 성북구 고려대로22길 6-7'
-const SPECIFIC_LOCATION = '고려대학교 하나스퀘어 강당 (지하1층)'
+const SPECIFIC_LOCATION = '고려대학교 하나스퀘어 (지하1층)'
 
 const LocationPage = () => {
   const theme = useTheme()
