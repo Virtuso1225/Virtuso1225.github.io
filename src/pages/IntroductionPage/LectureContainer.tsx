@@ -47,13 +47,31 @@ const LectureContainer = ({ lecturer }: { lecturer: INVITED_LECTURER }) => {
                 </Box>
               </Box>
               <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'flex-start',
+                  mb: theme.spacing(1)
+                }}
+              >
+                <Typography fontWeight="700" color="secondary" sx={{ fontSize: 13, marginBottom: 1 }}>
+                  학력
+                </Typography>
+                {lecturer.education?.map((career, index) => (
+                  <Typography fontSize={12} key={index}>
+                    {career}
+                  </Typography>
+                ))}
+              </Box>
+              <Box
                 sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start' }}
               >
                 <Typography fontWeight="700" color="secondary" sx={{ fontSize: 13, marginBottom: 1 }}>
                   주요 이력
                 </Typography>
                 {lecturer.career.map((career, index) => (
-                  <Typography variant="body2" key={index}>
+                  <Typography fontSize={12} key={index}>
                     {career}
                   </Typography>
                 ))}

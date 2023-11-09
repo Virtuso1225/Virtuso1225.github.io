@@ -82,12 +82,20 @@ const HomePage = () => {
               네이버, LG, SKT, 삼성SDS, 한화시스템, 카카오브레인
             </Typography>
           </Box>
-          <Box mt={4}>
+          <Box mt={4} sx={{ display: 'flex', flexDirection: 'column' }}>
             <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>
               연구 교류 및 성과 공유
             </Typography>
             <Typography variant="caption" mt={1}>
-              사업단 소속 교수진 논문 성과 발표 사업단 산하 연구실 포스터 전시 및 데모 AI 기업 연구개발 성과 및 미래
+              사업단 소속 교수진 논문 성과 발표
+            </Typography>
+            <Typography variant="caption" mt={1}>
+              사업단 산하 연구실 포스터 전시 및 데모
+            </Typography>
+            <Typography variant="caption" mt={1}>
+              AI 기업 연구개발 성과 및 미래
+            </Typography>
+            <Typography variant="caption" mt={1}>
               전략 발표 기업체 홍보 및 리크루팅
             </Typography>
           </Box>
