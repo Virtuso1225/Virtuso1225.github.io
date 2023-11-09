@@ -79,7 +79,7 @@ const HomePage = () => {
               초청강연
             </Typography>
             <Typography variant="caption" mt={1}>
-              네이버클라우드, LG AI Research, 삼성SDS, 한화시스템, 카카오브레인
+              네이버, LG, SKT, 삼성SDS, 한화시스템, 카카오브레인
             </Typography>
           </Box>
           <Box mt={4}>
