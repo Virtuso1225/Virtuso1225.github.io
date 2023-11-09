@@ -13,7 +13,9 @@ const LectureContainer = ({ lecturer }: { lecturer: INVITED_LECTURER }) => {
         flexDirection: 'column',
         padding: matches ? theme.spacing(3) : '',
         mt: theme.spacing(8),
-        width: isLg ? '48%' : '80%'
+        width: isLg ? '48%' : '80%',
+        border: 1,
+        borderColor: 'black'
       }}
     >
       <Grid container sx={{ display: 'flex', flexDirection: 'column' }}>

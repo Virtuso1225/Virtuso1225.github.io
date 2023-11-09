@@ -57,7 +57,7 @@ const scheduleData = [
   },
   {
     time: '12:20 - 13:30',
-    program: '점심 및 포스터 세션 (애기능생활관)',
+    program: '점심 (애기능생활관) 및 포스터 세션 (전시실 및 아뜨리움)',
     presenter: '',
     affiliation: '',
     chair: '',
@@ -113,7 +113,7 @@ const scheduleData = [
   },
   {
     time: '15:40 - 16:10',
-    program: '국방 인공지능 동향과 사례 / AI&Data in Hanwha Systems',
+    program: '국방 인공지능 동향과 사례 / AI & Data in Hanwha Systems',
     presenter: '하윤철 상무 / 김유신 상무',
     affiliation: '한화시스템',
     chair: '백승준 교수님',

@@ -135,7 +135,7 @@ export const INVITED_LECTURER: INVITED_LECTURER[] = [
       '2020-2022 한화시스템 상무 (미래혁신센터)',
       '2007-2020 SKT 부장 (AI 센터)'
     ],
-    lectureTitle: 'AI&Data in Hanwha Systems',
+    lectureTitle: 'AI & Data in Hanwha Systems',
     lectureContent: [
       'AI 시대에서의 빅데이터 활용의 중요성과 DX 소개',
       '한화시스템 AI 기반 솔루션 및 AI/Data 플랫폼 소개'
