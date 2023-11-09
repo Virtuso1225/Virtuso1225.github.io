@@ -6,12 +6,16 @@ const NavigationPaths = [
     name: 'HOME'
   },
   {
+    path: '/introduction',
+    name: '초청강연자'
+  },
+  {
     path: '/program',
     name: '프로그램'
   },
   {
-    path: '/introduction',
-    name: '연사소개'
+    path: '/register',
+    name: '등록안내'
   },
   {
     path: '/location',

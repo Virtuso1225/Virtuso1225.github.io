@@ -1,5 +1,5 @@
 import { Box, Tab, Tabs } from '@mui/material'
-
+import NavigationPaths from '@src/data/navigation'
 interface HeaderTabsProps {
   currentTab: number
   handleChange: (event: React.SyntheticEvent, newValue: number) => void
@@ -16,10 +16,9 @@ const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
         scrollButtons="auto"
         allowScrollButtonsMobile
       >
-        <Tab label="HOME" value={0} />
-        <Tab label="프로그램" value={1} />
-        <Tab label="연사소개" value={2} />
-        <Tab label="오시는길" value={3} />
+        {NavigationPaths.map((navbar, index) => (
+          <Tab key={index} label={navbar.name} value={index} />
+        ))}
       </Tabs>
     </Box>
   )
