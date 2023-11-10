@@ -1,4 +1,4 @@
-import { Grid, Box, Typography, Container, useMediaQuery, useTheme } from '@mui/material'
+import { Grid, Box, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { LinkTypography } from '@src/components/LinkBox'
 import { Link } from 'react-router-dom'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'

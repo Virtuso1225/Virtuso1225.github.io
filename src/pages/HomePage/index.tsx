@@ -7,12 +7,21 @@ const HomePage = () => {
   const matches = useMediaQuery('(max-width:1000px)')
 
   return (
-    <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+    <Box sx={{ mt: 10 }} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
       <Helmet>
         <title>AI TECH DAY 2023</title>
       </Helmet>
       <Box height={'100%'}>
-        <Grid container alignContent={'center'} spacing={4} alignItems={'center'} width={'90vw'} pt={matches ? 2 : 6}>
+        <Grid
+          container
+          justifyContent="center"
+          alignContent={'center'}
+          // spacing={4}
+          alignItems={'center'}
+          width={'90vw'}
+          pt={matches ? 2 : 6}
+          // sx={{ border: 1, borderColor: 'red' }}
+        >
           <Title />
           <Leader />
         </Grid>
