@@ -7,7 +7,7 @@ const HomePage = () => {
   const matches = useMediaQuery('(max-width:1000px)')
 
   return (
-    <Box sx={{ mt: 10 }} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+    <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
       <Helmet>
         <title>AI TECH DAY 2023</title>
       </Helmet>

@@ -15,11 +15,18 @@ const Leader = () => {
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         alignItems: 'center'
       }}
     >
-      <Grid item lg={8} md={12} ml={matches ? 0 : 8} pb={10}>
+      <Grid
+        item
+        lg={8}
+        md={12}
+        // ml={matches ? 0 : 8}
+        // pb={10}
+        sx={{ display: 'flex', flexDirection: 'column' }}
+      >
         <Box borderRadius={10} display={'flex'} flexDirection={'row'} justifyContent={matches ? 'center' : 'flex-end'}>
           <img src={LEADER.profile} width={180} height={240} loading="lazy" style={{ borderRadius: 240 }} />
         </Box>
