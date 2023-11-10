@@ -7,10 +7,17 @@ interface SideBarDrawerProps {
   open: boolean
   handleDrawerClose: () => void
 }
+const REGISTER_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdag1YBvFK1OUlXSwLjC5CnF_8zLV-QcHaPChbst2XZomBDgA/viewform'
 
 const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
   const location = useLocation()
-
+  const handleDrawerRegister = (_e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, index: number) => {
+    if (index === 3) {
+      window.open(REGISTER_URL, '_blank')
+    }
+    handleDrawerClose()
+  }
   return (
     <Drawer
       open={open}
@@ -35,7 +42,11 @@ const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
         <List>
           {NavigationPaths.map((page, index) => (
             <ListItem key={index} sx={{ borderBottom: 1, borderColor: 'inherit', alignItems: 'center', height: 60 }}>
-              <Link to={`${page.path}`} onClick={handleDrawerClose} style={{ textDecoration: 'none' }}>
+              <Link
+                to={index !== 3 ? `${page.path}` : '/'}
+                onClick={e => handleDrawerRegister(e, index)}
+                style={{ textDecoration: 'none' }}
+              >
                 <Typography fontWeight={location.pathname === page.path ? 'bold' : 'normal'}>{page.name}</Typography>
               </Link>
             </ListItem>
