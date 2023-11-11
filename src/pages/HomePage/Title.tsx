@@ -70,7 +70,7 @@ const Title = () => {
           <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>
             연구 교류 및 성과 공유
           </Typography>
-          <Typography variant="caption">사업단 소속 교수진 논문 성과 발표</Typography>
+          <Typography variant="caption">사업단 소속 교수진 연구개발 성과 발표</Typography>
           <Typography variant="caption">사업단 산하 연구실 포스터 전시 및 데모</Typography>
           <Typography variant="caption">AI 기업 연구개발 성과 및 미래 전략 발표</Typography>
           <Typography variant="caption">기업체 홍보 및 리크루팅</Typography>
