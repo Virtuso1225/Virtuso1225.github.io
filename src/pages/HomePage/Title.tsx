@@ -17,21 +17,17 @@ const Title = () => {
       sm={12}
       md={6}
       lg={6}
-      pb={theme.spacing(4)}
+      p={theme.spacing(8)}
       justifyContent={'space-between'}
       sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}
     >
-      <Box
-        sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}
-        mt={12}
-        pl={theme.spacing(4)}
-      >
+      <Box sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }} mt={12}>
         <Typography variant={matches ? 'subtitle2' : 'h5'}>고려대학교 ICT명품인재양성사업단&nbsp;</Typography>
         <Typography variant={'h2'} sx={{ fontWeight: 900, marginBottom: theme.spacing(2) }}>
           2023 AI TECH DAY
         </Typography>
       </Box>
-      <Box mt={2} pl={theme.spacing(4)}>
+      <Box mt={2}>
         <Grid>
           <Link to={'/program'} style={{ textDecoration: 'none' }}>
             <LinkTypography>
@@ -69,7 +65,7 @@ const Title = () => {
           </Box>
         </Grid>
       </Box>
-      <Box mt={6} pl={theme.spacing(4)}>
+      <Box mt={6}>
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <Typography variant="subtitle1" fontWeight="bold" color={theme.palette.text.secondary}>
             연구 교류 및 성과 공유
