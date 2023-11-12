@@ -6,6 +6,17 @@ export const LEADER = {
   profile: '/assets/Han.png'
 }
 
+export const PROFESSOR = [
+  { name: '강재우', url: 'https://dmis.korea.ac.kr' },
+  { name: '김승룡', url: 'http://cvlab.korea.ac.kr' },
+  { name: '김진규', url: 'http://visionai-lab.github.io' },
+  { name: '김현우', url: 'http://mlv.korea.ac.kr/' },
+  { name: '백승준', url: ' http://sing.korea.ac.kr' },
+  { name: '오학주', url: 'http://prl.korea.ac.kr' },
+  { name: '정원기', url: 'http://hvcl.korea.ac.kr' },
+  { name: '허준범', url: 'https://sites.google.com/korea.ac.kr/isslab' }
+]
+
 export type INVITED_LECTURER = {
   name: string
   position: string
