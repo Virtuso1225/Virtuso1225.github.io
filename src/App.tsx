@@ -2,7 +2,7 @@ import { useLocation, useRoutes } from 'react-router-dom'
 import router from './router'
 import { CssBaseline, ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material'
 import COLORS from 'src/theme/colors'
-import PretendardVariable from '@src/assets/fonts/PretendardVariable.ttf'
+// import PretendardVariable from '@src/assets/fonts/PretendardVariable.ttf'
 
 const App = () => {
   const content = useRoutes(router)
@@ -14,7 +14,7 @@ const App = () => {
   const theme = responsiveFontSizes(
     createTheme({
       typography: {
-        fontFamily: 'PretendardVariable'
+        fontFamily: 'Pretendard-Regular'
       },
       palette: {
         primary: {
@@ -32,14 +32,19 @@ const App = () => {
         },
         background: {
           default: COLORS.background,
-          paper: COLORS.antibackground,
+          paper: COLORS.antibackground
         }
       },
       components: {
         MuiCssBaseline: {
-          styleOverrides: {
-            '@fontFace': [PretendardVariable]
-          }
+          styleOverrides: `
+          @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+          `
         },
         MuiTabs: {
           styleOverrides: {

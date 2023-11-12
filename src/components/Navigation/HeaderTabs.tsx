@@ -4,7 +4,15 @@ interface HeaderTabsProps {
   currentTab: number
   handleChange: (event: React.SyntheticEvent, newValue: number) => void
 }
+
+export const REGISTER_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdag1YBvFK1OUlXSwLjC5CnF_8zLV-QcHaPChbst2XZomBDgA/viewform'
+
 const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
+  const handleRegisterClick = (event: React.SyntheticEvent) => {
+    handleChange(event, 0)
+    return window.open(REGISTER_URL, '_blank')
+  }
   return (
     <Box sx={{ marginLeft: 'auto' }}>
       <Tabs
@@ -16,9 +24,13 @@ const HeaderTabs = ({ currentTab, handleChange }: HeaderTabsProps) => {
         scrollButtons="auto"
         allowScrollButtonsMobile
       >
-        {NavigationPaths.map((navbar, index) => (
-          <Tab key={index} label={navbar.name} value={index} />
-        ))}
+        {NavigationPaths.map((navbar, index) =>
+          index !== 3 ? (
+            <Tab key={index} label={navbar.name} value={index} />
+          ) : (
+            <Tab key={index} label={navbar.name} value={index} onClick={handleRegisterClick} />
+          )
+        )}
       </Tabs>
     </Box>
   )

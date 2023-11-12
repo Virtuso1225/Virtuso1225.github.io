@@ -9,6 +9,7 @@ const SideBarContainer = () => {
   const location = useLocation()
   const isMain = location.pathname === '/'
   const [open, setOpen] = useState(false)
+
   const handleDrawer = () => {
     setOpen(!open)
   }

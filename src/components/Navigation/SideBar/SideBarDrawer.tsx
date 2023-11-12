@@ -3,6 +3,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import Logo from '../Logo'
 import { Link, useLocation } from 'react-router-dom'
 import NavigationPaths from '@src/data/navigation'
+import { REGISTER_URL } from '../HeaderTabs'
 interface SideBarDrawerProps {
   open: boolean
   handleDrawerClose: () => void
@@ -10,7 +11,12 @@ interface SideBarDrawerProps {
 
 const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
   const location = useLocation()
-
+  const handleDrawerRegister = (_e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, index: number) => {
+    if (index === 3) {
+      window.open(REGISTER_URL, '_blank')
+    }
+    handleDrawerClose()
+  }
   return (
     <Drawer
       open={open}
@@ -35,7 +41,11 @@ const SideBarDrawer = ({ open, handleDrawerClose }: SideBarDrawerProps) => {
         <List>
           {NavigationPaths.map((page, index) => (
             <ListItem key={index} sx={{ borderBottom: 1, borderColor: 'inherit', alignItems: 'center', height: 60 }}>
-              <Link to={`${page.path}`} onClick={handleDrawerClose} style={{ textDecoration: 'none' }}>
+              <Link
+                to={index !== 3 ? `${page.path}` : '/'}
+                onClick={e => handleDrawerRegister(e, index)}
+                style={{ textDecoration: 'none' }}
+              >
                 <Typography fontWeight={location.pathname === page.path ? 'bold' : 'normal'}>{page.name}</Typography>
               </Link>
             </ListItem>

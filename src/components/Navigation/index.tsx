@@ -33,7 +33,8 @@ const Navigation = () => {
         backgroundColor: showBackgroundImage ? theme.palette.background.paper : theme.palette.background.default,
         margin: 0,
         padding: 0,
-        overflow: 'hidden'
+        overflow: 'hidden',
+        width: '100vw'
       }}
     >
       {showBackgroundImage && <BackgroundImage />}
@@ -48,7 +49,7 @@ const Navigation = () => {
         }}
       >
         {isMobile ? <SideBarContainer /> : <Header />}
-        <ThemeWrapper>
+        <ThemeWrapper >
           <Outlet />
         </ThemeWrapper>
       </Box>

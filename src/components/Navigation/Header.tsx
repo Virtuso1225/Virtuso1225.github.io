@@ -32,7 +32,8 @@ const Header = () => {
         display: 'flex',
         width: '100vw',
         alignItems: 'center',
-        zIndex: 6
+        zIndex: 6,
+        height: '5vh',
       }}
     >
       <Tabs

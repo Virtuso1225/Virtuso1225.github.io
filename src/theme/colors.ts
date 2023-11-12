@@ -7,6 +7,6 @@ const COLORS = {
   transparentText: 'rgba(255, 255, 255, 0.7)',
   textHover: '#87CEFA',
   background: '#FAFAFA',
-  antibackground: '#020A17',
+  antibackground: '#000610',
 }
 export default COLORS

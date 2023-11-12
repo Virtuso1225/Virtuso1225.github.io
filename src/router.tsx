@@ -35,7 +35,7 @@ const routes: RouteObject[] = [
         element: <IntroductionPage />
       },
       {
-        path: '*',
+        path: '/*',
         element: <NotFoundPage />
       }
     ]

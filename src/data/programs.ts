@@ -57,7 +57,7 @@ const scheduleData = [
   },
   {
     time: '12:20 - 13:30',
-    program: '점심 및 포스터 세션 (애기능생활관)',
+    program: '점심 (애기능생활관) 및 포스터 세션 (전시실 및 아뜨리움)',
     presenter: '',
     affiliation: '',
     chair: '',
@@ -113,7 +113,7 @@ const scheduleData = [
   },
   {
     time: '15:40 - 16:10',
-    program: '국방 인공지능 동향과 사례 / AI&Data in Hanwha Systems',
+    program: '국방 인공지능 동향과 사례 / AI & Data in Hanwha Systems',
     presenter: '하윤철 상무 / 김유신 상무',
     affiliation: '한화시스템',
     chair: '백승준 교수님',
@@ -178,44 +178,3 @@ const scheduleData = [
 ]
 
 export default scheduleData
-
-// 10:00	10:10	개회사	"한정현 사업단장
-// (고려대 컴퓨터학과)"
-// 10:10	10:40	AI Research in the Era of Large Language Models (LLMs)	"윤상두 소장
-// (네이버 클라우드)"
-// 10:40	11:00	거대언어모델 기반 신약개발 코파일럿	"강재우 교수
-// (고려대 컴퓨터학과)"
-// 11:00	11:10	Break
-// 11:10	11:40	AI를 통해 만들어가는 더 나은 세상	"임우형 상무
-// (LG AI Research)"
-// 11:40	12:00	Multi-modal Foundation Models for Video QA and KGQA	"김현우 교수
-// (고려대 컴퓨터학과)"
-// 12:00	12:20	"Stealing Neural Network Architecture
-// Through SW-Based Side-Channel"	"허준범 교수
-// (고려대 컴퓨터학과)"
-// 12:20	13:30	점심 및 포스터 세션
-// 13:30	13:50	ICT명품인재양성사업단 - 산학협력	"한정현 사업단장
-// (고려대 컴퓨터학과)"
-// 13:50	14:20	SKT A.X LLM	"김지원 부사장
-// (SKT)"
-// 14:20	14:30	Break
-// 14:30	15:00	AI & Security in Samsung SDS	"조지훈 마스터
-// (삼성SDS)"
-// 15:00	15:20	AI-driven Software Analysis	"오학주 교수
-// (고려대 컴퓨터학과)"
-// 15:20	15:40	Coffee Break 및 포스터 세션
-// 15:40	16:10	국방 인공지능 동향과 사례 / AI&Data in Hanwha Systems	"하윤철 상무 / 김유신 상무
-// (한화시스템)"
-// 16:10	16:30	Recent Advances in Biomedical AI	"정원기 교수
-// (고려대 컴퓨터학과)"
-// 16:30	16:50	NeRF Under Extreme Conditions	"김승룡 교수
-// (고려대 컴퓨터학과)"
-// 16:50	17:00	Break
-// 17:00	17:30	A New Era of Generative AI	"노병석 리더
-// (카카오브레인)"
-// 17:30	17:50	Let AI Make the Most of Your Data for Dental Healthcare	"백승준 교수
-// (고려대 컴퓨터학과)"
-// 17:50	18:10	Towards Intelligent, Rational, Safe, Mobile Agents	"김진규 교수
-// (고려대 컴퓨터학과)"
-// 18:10	18:20	포스터/데모 시상 및 폐회사	"한정현 사업단장
-// (고려대 컴퓨터학과)"
