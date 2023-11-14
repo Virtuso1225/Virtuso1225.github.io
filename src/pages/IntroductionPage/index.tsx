@@ -13,7 +13,20 @@ const OrganizerPage = () => {
   return (
     <PageContainer>
       <Grid container sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-        <PageTitle title="PROFESSORS" />
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+            marginTop: theme.spacing(5)
+          }}
+        >
+          <Typography variant="h4" fontWeight="900" color="secondary" sx={{ alignSelf: 'flex-end' }}>
+            PROFESSORS
+          </Typography>
+          {!isMobile && <Divider sx={{ height: 3, width: '70%', backgroundColor: '#02306C', marginLeft: 1 }} />}
+        </Box>
         <Grid
           container
           item
