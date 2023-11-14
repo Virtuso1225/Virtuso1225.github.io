@@ -40,6 +40,11 @@ const Leader = () => {
           <Typography variant="h6" fontWeight="700" mt={theme.spacing(1)} textAlign={matches ? 'left' : 'right'}>
             {LEADER.position} {LEADER.name}
           </Typography>
+          <Box maxWidth={'800px'}>
+            <Typography variant="body2" fontWeight="400" mt={theme.spacing(1)} textAlign={matches ? 'left' : 'justify'}>
+              {LEADER.content}
+            </Typography>
+          </Box>
           <Typography
             variant="body2"
             fontWeight="400"
@@ -54,11 +59,6 @@ const Leader = () => {
             <Link fontSize="small" style={{ color: theme.palette.secondary.contrastText }} />
             &nbsp;사업단 홈페이지
           </Typography>
-          <Box maxWidth={'800px'}>
-            <Typography variant="body2" fontWeight="400" mt={theme.spacing(1)} textAlign={matches ? 'left' : 'justify'}>
-              {LEADER.content}
-            </Typography>
-          </Box>
         </Box>
       </Grid>
     </Grid>
