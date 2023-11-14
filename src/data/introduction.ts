@@ -3,18 +3,31 @@ export const LEADER = {
   position: 'ICT명품인재양성사업단 단장',
   content:
     '고려대학교 ICT명품인재양성사업단은 11월 22일(수) 본교 하나스퀘어에서 사업단 1년 성과를 총결산하는 2023 AI Tech Day를 개최합니다. 본 행사에서는 사업단 소속 교수들이 올해 발표한 top-tier conference 논문과 현재 진행 중인 연구를 결합하여 압축 발표하고, 네이버, LG, SKT, 삼성SDS, 한화시스템, 카카오브레인의 AI 연구개발 책임자들이 각 기업의 AI 연구개발 성과와 미래 전략을 발표합니다. 여기에 더불어, 사업단 소속 연구실의 포스터와 데모 세션이 준비되고, 기업체 홍보 및 리쿠르팅 부스도 마련됩니다. AI의 현재와 미래를 보고자 하는 분들의 많은 참석 바랍니다.',
-  profile: '/assets/Han.png'
+  profile: '/assets/Han.png',
+  url: 'https://mpij.korea.ac.kr/'
 }
 
-export const PROFESSOR = [
-  { name: '강재우', url: 'https://dmis.korea.ac.kr' },
-  { name: '김승룡', url: 'http://cvlab.korea.ac.kr' },
-  { name: '김진규', url: 'http://visionai-lab.github.io' },
-  { name: '김현우', url: 'http://mlv.korea.ac.kr/' },
-  { name: '백승준', url: ' http://sing.korea.ac.kr' },
-  { name: '오학주', url: 'http://prl.korea.ac.kr' },
-  { name: '정원기', url: 'http://hvcl.korea.ac.kr' },
-  { name: '허준범', url: 'https://sites.google.com/korea.ac.kr/isslab' }
+export interface Professor {
+  name: string
+  url: string
+  profile: string
+  lab: string
+}
+
+export const PROFESSORS: Professor[] = [
+  { name: '강재우', url: 'https://dmis.korea.ac.kr', profile: '/assets/profKangJaeWoo.jpg', lab: 'DMIS' },
+  { name: '김승룡', url: 'http://cvlab.korea.ac.kr', profile: '/assets/profjKimSeungRyong.jpg', lab: 'CVLab' },
+  { name: '김진규', url: 'http://visionai-lab.github.io', profile: '/assets/profKimJinGyu.jpg', lab: 'VisionAI' },
+  { name: '김현우', url: 'http://mlv.korea.ac.kr/', profile: '/assets/profKimHyunWoo.jpg', lab: 'MLV' },
+  { name: '백승준', url: ' http://sing.korea.ac.kr', profile: '/assets/profBaekSeungJun.jpg', lab: 'SING' },
+  { name: '오학주', url: 'http://prl.korea.ac.kr', profile: '/assets/profOhHakJoo.jpg', lab: 'PRL' },
+  { name: '정원기', url: 'http://hvcl.korea.ac.kr', profile: '/assets/profJungWonKi.jpg', lab: 'HVCL' },
+  {
+    name: '허준범',
+    url: 'https://sites.google.com/korea.ac.kr/isslab',
+    profile: '/assets/profHeoJoonBum.jpg',
+    lab: 'ISS'
+  }
 ]
 
 export type INVITED_LECTURER = {

@@ -1,5 +1,6 @@
 import { Box, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { LEADER } from '@src/data/introduction'
+import { Link } from '@mui/icons-material'
 
 const Leader = () => {
   const matches = useMediaQuery('(max-width:800px)')
@@ -39,9 +40,25 @@ const Leader = () => {
           <Typography variant="h6" fontWeight="700" mt={theme.spacing(1)} textAlign={matches ? 'left' : 'right'}>
             {LEADER.position} {LEADER.name}
           </Typography>
-          <Typography variant="body2" fontWeight="400" mt={theme.spacing(1)} textAlign={matches ? 'left' : 'justify'}>
-            {LEADER.content}
+          <Typography
+            variant="body2"
+            fontWeight="400"
+            mt={theme.spacing(1)}
+            onClick={() => window.open(LEADER.url, '_blank')}
+            alignItems={'center'}
+            style={{ cursor: 'pointer' }}
+            display={'flex'}
+            justifyContent={matches ? 'flex-start' : 'flex-end'}
+            color={theme.palette.secondary.contrastText}
+          >
+            <Link fontSize="small" style={{ color: theme.palette.secondary.contrastText }} />
+            &nbsp;사업단 홈페이지
           </Typography>
+          <Box maxWidth={'800px'}>
+            <Typography variant="body2" fontWeight="400" mt={theme.spacing(1)} textAlign={matches ? 'left' : 'justify'}>
+              {LEADER.content}
+            </Typography>
+          </Box>
         </Box>
       </Grid>
     </Grid>
