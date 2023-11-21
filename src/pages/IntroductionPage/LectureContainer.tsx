@@ -20,7 +20,7 @@ const LectureContainer = ({ lecturer }: { lecturer: INVITED_LECTURER }) => {
       <Grid container sx={{ display: 'flex', flexDirection: 'column' }}>
         <Grid container item sx={{ display: 'flex', flexDirection: 'row', marginBottom: 1 }}>
           <Grid item lg={6} md={6} sm={12}>
-            <img src={lecturer.profile} width={180} height={180} />
+            <img src={lecturer.profile} width={'auto'} height={180} />
           </Grid>
           <Grid item lg={6} md={6} sm={12}>
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
