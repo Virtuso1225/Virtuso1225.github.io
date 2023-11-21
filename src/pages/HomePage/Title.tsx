@@ -21,7 +21,7 @@ const Title = () => {
       justifyContent={'space-between'}
       sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}
     >
-      <Box sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }} mt={12}>
+      <Box sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }} mt={10}>
         <Typography variant={matches ? 'subtitle2' : 'h5'}>고려대학교 ICT명품인재양성사업단&nbsp;</Typography>
         <Typography variant={'h2'} sx={{ fontWeight: 900, marginBottom: theme.spacing(2) }}>
           2023 AI TECH DAY
@@ -86,7 +86,7 @@ const Title = () => {
             Recruiting 참여 기업
           </Typography>
           <Typography variant="caption" mt={1}>
-            Samsung Research, 삼성전기, 한화시스템, FuriosaAI, VIVE STUDIOS 등
+            Samsung Research, 삼성전기, 한화시스템, FuriosaAI 등
           </Typography>
         </Box>
       </Box>
